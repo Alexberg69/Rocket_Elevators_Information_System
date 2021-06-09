@@ -11,8 +11,12 @@
 // about supported directives.
 //
 //= require activestorage
-//= require jquery3
-//= require_tree .
+//= require jquery
+//= require cable
+//= require scripts
+//= require contact
+//= require_tree ./channels
+//= require_tree ./view
 //= require_tree ./plugins
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="icon" type="image/png" href="assets/images/Rocket_Elevators/faviconlogo.png" />
+		<link rel="icon" type="image/png" href="<%= asset_path('faviconlogo.png') %>" />
 		<meta charset="utf-8" />
 		<title>Rocket Elevators-Commercial</title>
 		<meta name="description" content="" />
@@ -81,7 +81,7 @@
 
 						<!-- Logo -->
 						<a class="logo float-left scrollTo" href="#top">
-							<img src="assets/images/Rocket_Elevators/R2.png" alt="" />
+							<img src="<%= asset_path('R2.png') %>" alt="" />
 						</a>
 
 						<!-- 
@@ -100,40 +100,40 @@
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									<li class="active"><!-- HOME -->
-										<a id="home-nav" href="index.html">
+										<a id="home-nav" href="index">
 											HOME
 										</a>
 									</li>
 									<li><!-- SERVICES -->
 										<li class="dropdown">
-										<a class="dropdown-toggle" id="services-nav" href="#services">
+										<a class="dropdown-toggle" id="services-nav" href="index#services">
 										  SERVICES
 											</a>
 										<ul class="dropdown-menu">
-										  <li><a href="residential.html">Residential</a></li>
-										  <li><a href="commercial.html">Commercial</a></li>
+										  <li><a href="residential">Residential</a></li>
+										  <li><a href="commercial">Commercial</a></li>
 										</ul>
 									</li>
 									</li>
 									<li><!-- PORTFOLIO -->
-										<a id="portfolio-nav" href="index.html#PORTFOLIO">
+										<a id="portfolio-nav" href="index#PORTFOLIO">
 											PORTFOLIO
 										</a>
 									</li>
 									<li><!-- NEWS -->
-										<a id="news-nav" href="index.html#news">
+										<a id="news-nav" href="index#news">
 											NEWS
 										</a>
 									</li>
 
 									<li><!-- CLIENTS -->
-										<a id="clients-nav" href="index.html#clients">
+										<a id="clients-nav" href="index#clients">
 											CLIENTS
 										</a>
 									</li>
 
 									<li><!-- CONTACT -->
-										<a id="contact-nav" href="/index#contact">
+										<a id="contact-nav" href="index#contact">
 											CONTACT
 										</a>
 									</li>
@@ -154,7 +154,7 @@
 					
 						<div class="col-lg-4 col-md-4 col-sm-4">
 							<figure class="mb-20">
-								<img class="img-fluid" src="assets/images/Rocket_Elevators/corporateelevator1.jpg" alt="service" />
+								<img class="img-fluid" src="<%= asset_path('corporateelevator1.jpg') %>" alt="service" />
 							</figure>
 
 							<h4 class="mb-0">Classic Style</h4>
@@ -165,7 +165,7 @@
 
 						<div class="col-lg-4 col-md-4 col-sm-4">
 							<figure class="mb-20">
-								<img class="img-fluid" src="assets/images/Rocket_Elevators/corporateelevator2.jpg" alt="service" />
+								<img class="img-fluid" src="<%= asset_path('corporateelevator2.jpg') %>" alt="service" />
 							</figure>
 
 							<h4 class="mb-0">Modern Style</h4>
@@ -176,7 +176,7 @@
 
 						<div class="col-lg-4 col-md-4 col-sm-4">
 							<figure class="mb-20">
-								<img class="img-fluid" src="assets/images/Rocket_Elevators/corporateelevator5.jpeg" alt="service" />
+								<img class="img-fluid" src="<%= asset_path('corporateelevator5.jpeg') %>" alt="service" />
 							</figure>
 
 							<h4 class="mb-0">Glass Central Elevator</h4>
@@ -192,7 +192,7 @@
 			<!-- / -->
 
 			<!-- PARALLAX -->
-			<section class="parallax parallax-2" style="background-image: url('assets/images/Rocket_Elevators/AdobeStock_122227340.jpeg');">
+			<section class="parallax parallax-2" style="background-image: url('<%= asset_path('AdobeStock_122227340.jpeg') %>');">
 				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
 
 				<div class="container text-center">
@@ -229,7 +229,7 @@
 						</div>
 
 						<div class="col-md-6 col-sm-6">
-							<img width="547" height="300" src="assets/images/Rocket_Elevators/corporateelevator3.png"/>
+							<img width="547" height="300" src="<%= asset_path('corporateelevator3.png') %>"/>
 						</div>
 
 					</div>
@@ -258,7 +258,7 @@
 						</div>
 
 						<div class="col-md-6 col-sm-6">
-							<img width="547" height="300" src="assets/images/Rocket_Elevators/corporateelevator6.jpeg"/>
+							<img width="547" height="300" src="<%= asset_path('corporateelevator6.jpeg') %>"/>
 						</div>
 
 					</div>
@@ -271,7 +271,7 @@
 
 
 			<!-- BUTTON CALLOUT -->
-			<a href="index.html#contact" class="btn btn-xlg btn-primary fs-20 fullwidth m-0 rad-0 p-40">
+			<a href="index#contact" class="btn btn-xlg btn-primary fs-20 fullwidth m-0 rad-0 p-40">
 				<span class="font-lato fs-30"> 
 					<strong>Contact us! &raquo;</strong>
 				</span>
@@ -330,19 +330,12 @@
 		<a href="#" id="toTop"></a>
 
 
-		<!-- PRELOADER -->
-		<div id="preloader">
-			<div class="inner">
-				<span class="loader"></span>
-			</div>
-		</div><!-- /PRELOADER -->
-
 
 		<!-- JAVASCRIPT FILES -->
 		<script>var plugin_path = 'assets/plugins/';</script>
-		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
 
-		<script src="assets/js/scripts.js"></script>
+
+
 
 		<!-- PAGE LEVEL SCRIPTS [cart js] -->
 
