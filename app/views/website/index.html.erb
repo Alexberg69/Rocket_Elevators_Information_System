@@ -15,41 +15,8 @@
 		<!-- WEB FONTS : use %7C instead of | (pipe) -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
 
-		<!-- CORE CSS -->
-		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-		
-		<!-- REVOLUTION SLIDER -->
-		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
-
-		<!-- THEME CSS -->
-		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-
-		<!-- PAGE LEVEL SCRIPTS -->
-		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/color_scheme/darkblue.css" rel="stylesheet" type="text/css" id="color_scheme" />
 	</head>
 
-	<!--
-		AVAILABLE BODY CLASSES:
-		
-		smoothscroll 			= create a browser smooth scroll
-		enable-animation		= enable WOW animations
-
-		bg-grey					= grey background
-		grain-grey				= grey grain background
-		grain-blue				= blue grain background
-		grain-green				= green grain background
-		grain-blue				= blue grain background
-		grain-orange			= orange grain background
-		grain-yellow			= yellow grain background
-		
-		boxed 					= boxed layout
-		pattern1 ... patern11	= pattern background
-		menu-vertical-hide		= hidden, open on click
-		
-	-->
 	<body>
 
 		</div>
@@ -118,41 +85,46 @@
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									<li class="active"><!-- HOME -->
-										<a id="home-nav" href="index.html">
+										<a id="home-nav" href="index">
 											HOME
 										</a>
 									</li>
 									<li><!-- SERVICES -->
 										<li class="dropdown">
-										<a class="dropdown-toggle" id="services-nav" href="#services" >
+										<a class="dropdown-toggle" id="services-nav" href="index#services" >
 										  SERVICES
 											</a>
 										<ul class="dropdown-menu">
-										  <li><a href="residential.html">Residential</a></li>
-										  <li><a href="commercial.html">Commercial</a></li>
+										  <li><a href="residential">Residential</a></li>
+										  <li><a href="commercial">Commercial</a></li>
 										</ul>
 									</li>
 									</li>
 									<li><!-- PORTFOLIO -->
-										<a id="portfolio-nav" href="#PORTFOLIO">
+										<a id="portfolio-nav" href="index#PORTFOLIO">
 											PORTFOLIO
 										</a>
 									</li>
 									<li><!-- NEWS -->
-										<a id="news-nav" href="#news">
+										<a id="news-nav" href="index#news">
 											NEWS
 										</a>
 									</li>
 
 									<li><!-- CLIENTS -->
-										<a id="clients-nav" href="#clients">
+										<a id="clients-nav" href="index#clients">
 											CLIENTS
 										</a>
 									</li>
 
 									<li><!-- CONTACT -->
-										<a id="contact-nav" href="#contact">
+										<a id="contact-nav" href="index#contact">
 											CONTACT
+										</a>
+									</li>
+									<li><!-- USERS -->
+										<a id="login-nav" href="index">
+											LOGIN
 										</a>
 									</li>
 								</ul>
@@ -248,7 +220,7 @@
 							data-endelementdelay="0.1"
 							data-endspeed="500"
 							style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
-								<a class="btn btn-primary btn-lg" href="Quote Page.html">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
+								<a class="btn btn-primary btn-lg" href="quote">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
 						</li>
 
 						<!-- SLIDE  -->
@@ -302,7 +274,7 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 4; max-width: auto;">
-									<a class="btn btn-danger btn-lg" href="residential.html">Residential &nbsp; <i class="fa fa-angle-right"></i></a>
+									<a class="btn btn-danger btn-lg" href="residential">Residential &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 
 						<!-- SLIDE  -->
@@ -356,7 +328,7 @@
 														data-endelementdelay="0.1"
 														data-endspeed="500"
 														style="z-index: 4; max-width: auto;">
-															<a class="btn btn-danger btn-lg" href="commercial.html">Corporate &nbsp; <i class="fa fa-angle-right"></i></a>
+															<a class="btn btn-danger btn-lg" href="commercial">Corporate &nbsp; <i class="fa fa-angle-right"></i></a>
 													</div>	
 						</li>
 
@@ -426,9 +398,9 @@
 
 					<div class="text-center">
 						<h2 class="fs-40 fw-300">Rocket Elevators, In business since 1976! </h2>
-						<a class="btn btn-primary btn-lg" href="Quote Page.html">REQUEST A QUOTE <i class="fa fa-angle-right"></i></a> 
+						<a class="btn btn-primary btn-lg" href="quote">REQUEST A QUOTE <i class="fa fa-angle-right"></i></a> 
 						&nbsp; OR &nbsp; 
-						<a class="btn btn-danger btn-lg" href="#contact">CONTACT US <i class="fa fa-angle-right"></i></a>
+						<a class="btn btn-danger btn-lg" href="index#contact">CONTACT US <i class="fa fa-angle-right"></i></a>
 					</div>
 
 				</div>
@@ -1310,7 +1282,7 @@
 
 		<!-- JAVASCRIPT FILES -->
 		<script>var plugin_path = 'assets/plugins/';</script>
-		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+		
 		
 		<script src="assets/js/scripts.js"></script>
 

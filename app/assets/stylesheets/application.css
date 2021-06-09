@@ -12,4 +12,19 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
+ @import url(bootstrap.min.css);
+ @import url(essentials.css);
+ @import url(layout.css);
+ @import url(header-1.css);
+ @import url(color_scheme/darkblue.css);
+ @import url(fonts/revicons.ttf);
+ @import url(fonts/revicons.woff);
+ @import url(settings.css);
+ @import url(extralayers.css);
+ @import url(fonts/font-icons.ttf);
+ @import url(fonts/font-icons.woff);
+ @import url(fonts/fontawesome-webfont.woff);
+ @import url(fonts/fontawesome-webfont.woff2);
+ 
