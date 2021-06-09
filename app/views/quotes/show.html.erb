@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @quote.name %>
+</p>
+
+<p>
+  <strong>Product line:</strong>
+  <%= @quote.product_line %>
+</p>
+
+<p>
+  <strong>Number of elevator:</strong>
+  <%= @quote.number_of_elevator %>
+</p>
+
+<p>
+  <strong>Unit price of each elevator:</strong>
+  <%= @quote.unit_price_of_each_elevator %>
+</p>
+
+<p>
+  <strong>Total price of elevators:</strong>
+  <%= @quote.total_price_of_elevators %>
+</p>
+
+<p>
+  <strong>Installation fees:</strong>
+  <%= @quote.installation_fees %>
+</p>
+
+<p>
+  <strong>Final price:</strong>
+  <%= @quote.final_price %>
+</p>
+
+<%= link_to 'Edit', edit_quote_path(@quote) %> |
+<%= link_to 'Back', quotes_path %>
