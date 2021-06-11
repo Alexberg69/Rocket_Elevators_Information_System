@@ -10,10 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 2021_06_09_200007) do
 
-  create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_ "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "last_name"
     t.string "first_name"
     t.string "title"
@@ -26,11 +25,19 @@ ActiveRecord::Schema.define(version: 2021_06_09_200007) do
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "product_line"
-    t.binary "number_of_elevator"
-    t.binary "unit_price_of_each_elevator"
-    t.binary "total_price_of_elevators"
-    t.binary "installation_fees"
-    t.binary "final_price"
+    t.decimal "number_of_appartement", precision: 10
+    t.decimal "number_of_floor", precision: 10
+    t.decimal "number_of_basement", precision: 10
+    t.decimal "number_of_companies", precision: 10
+    t.decimal "number_of_parking_spots", precision: 10
+    t.decimal "number_of_elevators", precision: 10
+    t.decimal "number_of_corporations", precision: 10
+    t.decimal "maximum_occupancy", precision: 10
+    t.decimal "business_hours", precision: 10
+    t.string "unit_price_of_each_elevator"
+    t.string "total_price_of_elevators"
+    t.string "installation_fees"
+    t.string "final_price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
