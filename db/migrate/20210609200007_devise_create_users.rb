@@ -42,3 +42,5 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
     # add_index :users, :unlock_token,         unique: true
   end
 end
+
+# https://levelup.gitconnected.com/how-to-add-authentication-to-rails-web-app-using-devise-a5caedbbc093 m
