@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_14_200648) do
+ActiveRecord::Schema.define(version: 2021_06_14_222000) do
+
+  create_table "batteries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "building_id"
+    t.string "type"
+    t.string "status"
+    t.integer "employee_id"
+    t.string "date_of_commissioning"
+    t.string "date_of_last_inspection"
+    t.string "certificate_of_operations"
+    t.string "information"
+    t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "buildings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "customer_id"
@@ -21,6 +35,31 @@ ActiveRecord::Schema.define(version: 2021_06_14_200648) do
     t.integer "full_name_of_the_technical_contact_for_the_building"
     t.string "technical_contact_email_for_the_building"
     t.string "technical_contact_phone_for_the_building"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "columns", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "battery_id"
+    t.string "type"
+    t.integer "number_of_floors_served"
+    t.string "status"
+    t.string "information"
+    t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "elevators", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "column_id"
+    t.integer "serial_number"
+    t.string "type"
+    t.string "status"
+    t.string "date_of_commissioning"
+    t.string "date_of_last_inspection"
+    t.string "certificate_of_inspection"
+    t.string "information"
+    t.text "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
