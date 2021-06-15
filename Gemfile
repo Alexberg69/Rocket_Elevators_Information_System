@@ -72,3 +72,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.2'
 
 gem 'rails_admin', github: 'sferik/rails_admin'
+
+gem 'pg', '~> 0.18.4'
