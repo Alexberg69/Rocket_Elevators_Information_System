@@ -25,15 +25,15 @@ ActiveRecord::Schema.define(version: 2021_06_15_015625) do
   end
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.datetime "customers_Creation_Date"
-    t.string "compagny_Name"
-    t.string "full_Name_of_the_company_contact"
+    t.datetime "customers_creation_date"
+    t.string "compagny_name"
+    t.string "full_name_of_the_company_contact"
     t.string "company_contact_phone"
     t.string "email_of_the_company_contact"
-    t.string "company_Description"
-    t.string "full_Name_of_Service_Technical_Authority"
-    t.string "technical_Authority_Phone_for_Service"
-    t.string "technical_Manager_Email_for_Service"
+    t.string "company_description"
+    t.string "full_name_of_service_technical_authority"
+    t.string "technical_authority_phone_for_service"
+    t.string "technical_manager_email_for_service"
     t.bigint "user_id"
     t.bigint "company_headquarters_address_id"
     t.index ["company_headquarters_address_id"], name: "index_customers_on_company_headquarters_address_id"
