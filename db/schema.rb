@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 2021_06_15_163235) do
 
   create_table "batteries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -73,6 +74,35 @@ ActiveRecord::Schema.define(version: 2021_06_15_163235) do
     t.datetime "updated_at", null: false
     t.bigint "column_id"
     t.index ["column_id"], name: "index_elevators_on_column_id"
+
+
+  create_table "addresses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "type_of_address"
+    t.string "status"
+    t.string "entity"
+    t.string "number_and_street"
+    t.string "suite_or_appartment"
+    t.string "city"
+    t.string "postal_code"
+    t.string "country"
+    t.string "notes"
+  end
+
+  create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.datetime "customers_creation_date"
+    t.string "compagny_name"
+    t.string "full_name_of_the_company_contact"
+    t.string "company_contact_phone"
+    t.string "email_of_the_company_contact"
+    t.string "company_description"
+    t.string "full_name_of_service_technical_authority"
+    t.string "technical_authority_phone_for_service"
+    t.string "technical_manager_email_for_service"
+    t.bigint "user_id"
+    t.bigint "company_headquarters_address_id"
+    t.index ["company_headquarters_address_id"], name: "index_customers_on_company_headquarters_address_id"
+    t.index ["user_id"], name: "index_customers_on_user_id"
+
   end
 
   create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -117,10 +147,13 @@ ActiveRecord::Schema.define(version: 2021_06_15_163235) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+
   add_foreign_key "batteries", "buildings"
   add_foreign_key "batteries", "employees"
   add_foreign_key "building_details", "buildings"
   add_foreign_key "columns", "batteries"
   add_foreign_key "elevators", "columns"
+  add_foreign_key "customers", "addresses", column: "company_headquarters_address_id"
+  add_foreign_key "customers", "users"
   add_foreign_key "employees", "users"
 end
