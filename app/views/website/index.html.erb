@@ -1109,7 +1109,7 @@
 							</div><!-- /Alert Mandatory -->
 
 
-							<form> <!--action="php/contact.php" method="post" enctype="multipart/form-data" Took this out-->
+							<form method="post" action="/leads"> <!--action="php/contact.php" method="post" enctype="multipart/form-data" Took this out-->
 								<input type="hidden" name="action" value="contact_send"/>
 								
 								<fieldset>
@@ -1117,15 +1117,15 @@
 									<div class="row">
 											<div class="col-md-4">
 												<label for="contact:[name]">Full Name *</label>
-												<input required type="text" value="" class="form-control" name="contact[name][required]" id="name">
+												<input required type="text" value="" class="form-control" name="leads[contact_name]" id="name">
 											</div>
 											<div class="col-md-4">
 												<label for="contact:[email]">E-mail Address *</label>
-												<input required type="email" value="" class="form-control" name="contact[email][required]" id="email">
+												<input required type="email" value="" class="form-control" name="leads[email]" id="email">
 											</div>
 											<div class="col-md-4">
 												<label for="contact:phone">Phone Number *</label>
-												<input required type="text" value="" class="form-control" name="contact[phone][required]" id="phone">
+												<input required type="text" value="" class="form-control" name="leads[phone_number]" id="phone">
 											</div>
 
 
@@ -1133,21 +1133,21 @@
 									<div class="row">
 											<div class="col-md-4">
 												<label for="contact:company_name">Company name</label>
-												<input type="text" value="" class="form-control" name="contact[company_name]" id="company_name">
+												<input type="text" value="" class="form-control" name="leads[company_name]" id="company_name">
 											</div>
 									    	<div class="col-md-4">
 												<label for="contact:project_name">Project Name</label>
-												<input type="text" value="" class="form-control" name="contact[project_name]" id="project_name">
+												<input type="text" value="" class="form-control" name="leads[project_name]" id="project_name">
 											</div>
 											<div class="col-md-4">
 												<label for="contact:project_description">Project Description</label>
-												<input type="text" value="" class="form-control" name="contact[project_description]" id="project_description">
+												<input type="text" value="" class="form-control" name="leads[project_description]" id="project_description">
 											</div>
 									</div>
 									<div class="row">
 										<div class="col-md-4">
 											<label for="contact_department">Department</label>
-											<select class="form-control pointer" name="contact[department]" id="department">
+											<select class="form-control pointer" name="leads[department_in_charge_of_the_elevators]" id="department">
 												<option value="">--- Select ---</option>
 												<option value="Residential">Residential</option>
 												<option value="Commercial">Commercial</option>
@@ -1157,7 +1157,7 @@
 										</div>
 										<div class="col-md-8">
 												<label for="contact:message">Message *</label>
-												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message][required]" id="message"></textarea>
+												<textarea required maxlength="10000" rows="8" class="form-control" name="leads[message]" id="message"></textarea>
 											</div>
 									</div>
 									<div class="row">
@@ -1165,7 +1165,7 @@
 												<label for="contact:attachment">File Attachment</label>
 
 												<!-- custom file upload -->
-												<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="attachment" data-btn-text="Select a File" />
+												<input class="custom-file-upload" type="file" id="file" name="leads[binary_file]" id="attachment" data-btn-text="Select a File" />
 												<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
 
 											</div>
