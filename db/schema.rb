@@ -10,7 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_11_192356) do
+ActiveRecord::Schema.define(version: 2021_06_14_154711) do
+
+  create_table "Customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.datetime "Customers_Creation_Date"
+    t.string "Compagny_Name"
+    t.string "Company_headquarters_address"
+    t.string "Full_Name_of_the_company_contact"
+    t.string "Company_contact_phone"
+    t.string "Email_of_the_company_contact"
+    t.string "Company_Description"
+    t.string "Full_Name_of_Service_Technical_Authority"
+    t.string "Technical_Authority_Phone_for_Service"
+    t.string "Technical_Manager_Email_for_Service"
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_client_on_user_id"
+  end
+
+  create_table "address", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "Type_of_address"
+    t.string "Status"
+    t.string "Entity"
+    t.string "Number_and_street"
+    t.string "Suite_or_appartment"
+    t.string "City"
+    t.string "Postal_code"
+    t.string "Country"
+    t.string "Notes"
+  end
 
   create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "last_name"
@@ -19,7 +46,7 @@ ActiveRecord::Schema.define(version: 2021_06_11_192356) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
-    t.index ["user_id"], name: "index_employees_on_user_id"
+    t.index ["user_id"], name: "index_users_on_user_id"
   end
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
