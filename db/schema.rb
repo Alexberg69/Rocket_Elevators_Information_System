@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_15_015138) do
+ActiveRecord::Schema.define(version: 2021_06_15_163235) do
 
   create_table "batteries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "type"
@@ -26,6 +26,15 @@ ActiveRecord::Schema.define(version: 2021_06_15_015138) do
     t.bigint "employee_id"
     t.index ["building_id"], name: "index_batteries_on_building_id"
     t.index ["employee_id"], name: "index_batteries_on_employee_id"
+  end
+
+  create_table "building_details", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "information_key"
+    t.string "value"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "building_id"
+    t.index ["building_id"], name: "index_building_details_on_building_id"
   end
 
   create_table "buildings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -110,6 +119,7 @@ ActiveRecord::Schema.define(version: 2021_06_15_015138) do
 
   add_foreign_key "batteries", "buildings"
   add_foreign_key "batteries", "employees"
+  add_foreign_key "building_details", "buildings"
   add_foreign_key "columns", "batteries"
   add_foreign_key "elevators", "columns"
   add_foreign_key "employees", "users"
