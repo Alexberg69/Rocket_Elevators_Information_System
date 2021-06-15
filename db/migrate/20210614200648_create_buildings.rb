@@ -1,8 +1,6 @@
 class CreateBuildings < ActiveRecord::Migration[5.2]
   def change
     create_table :buildings do |t|
-      t.integer :customer_id
-      t.string :address_id
       t.string :full_name_of_the_building_administrator
       t.string :email_of_the_administrator
       t.string :phone_number_of_the_building_administrator

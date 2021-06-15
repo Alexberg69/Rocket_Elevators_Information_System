@@ -10,13 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_14_222000) do
+ActiveRecord::Schema.define(version: 2021_06_15_015138) do
 
   create_table "batteries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "building_id"
     t.string "type"
     t.string "status"
-    t.integer "employee_id"
     t.string "date_of_commissioning"
     t.string "date_of_last_inspection"
     t.string "certificate_of_operations"
@@ -24,11 +22,13 @@ ActiveRecord::Schema.define(version: 2021_06_14_222000) do
     t.text "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "building_id"
+    t.bigint "employee_id"
+    t.index ["building_id"], name: "index_batteries_on_building_id"
+    t.index ["employee_id"], name: "index_batteries_on_employee_id"
   end
 
   create_table "buildings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "customer_id"
-    t.string "address_id"
     t.string "full_name_of_the_building_administrator"
     t.string "email_of_the_administrator"
     t.string "phone_number_of_the_building_administrator"
@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 2021_06_14_222000) do
   end
 
   create_table "columns", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "battery_id"
     t.string "type"
     t.integer "number_of_floors_served"
     t.string "status"
@@ -48,10 +47,11 @@ ActiveRecord::Schema.define(version: 2021_06_14_222000) do
     t.text "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "battery_id"
+    t.index ["battery_id"], name: "index_columns_on_battery_id"
   end
 
   create_table "elevators", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "column_id"
     t.integer "serial_number"
     t.string "type"
     t.string "status"
@@ -62,6 +62,8 @@ ActiveRecord::Schema.define(version: 2021_06_14_222000) do
     t.text "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "column_id"
+    t.index ["column_id"], name: "index_elevators_on_column_id"
   end
 
   create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -106,5 +108,9 @@ ActiveRecord::Schema.define(version: 2021_06_14_222000) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "batteries", "buildings"
+  add_foreign_key "batteries", "employees"
+  add_foreign_key "columns", "batteries"
+  add_foreign_key "elevators", "columns"
   add_foreign_key "employees", "users"
 end
