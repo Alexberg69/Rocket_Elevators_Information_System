@@ -19,9 +19,6 @@ namespace :app do
     con.exec("INSERT INTO FactElevator (serialNumber, date_of_commissioning, buildingID, customerID, building_city) VALUES (#{e.serial_number}, #{e.date_of_commissioning}, #{e.column.battery.building.id}, #{e.column.battery.building.customer.id}, #{e.column.battery.building.address_of_the_building.city});")
     end
   end
-  task fequestion: :environment do
-    con.exec("SELECT buildingID FROM FactElevator GROUP BY customerID RETURNING *;")
-  end
   desc "Create the DimCustomers Table"
   task dimcustomers: :environment do
 
@@ -43,4 +40,8 @@ namespace :app do
   # end
 
 end
-  
+
+# FactElevator question command.. maybe
+#   con.exec("SELECT buildingid , customerid , COUNT(*) AS nbElevatorPerCust
+#   FROM factelevator
+#   GROUP BY 1,2 ;")

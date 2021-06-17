@@ -17,6 +17,8 @@ var FinalPricecalc = document.getElementById("final-price");
 var standard = document.getElementById("standard");
 var premium = document.getElementById("premium");
 var excelium = document.getElementById("excelium");
+var Cname = document.getElementById("company-name")
+var Email = document.getElementById("email")
 
 
 function hideQuestions() {
@@ -217,6 +219,12 @@ function Hidecalc() {
     if (FinalPricecalc.style.display === "block") {
         FinalPricecalc.style.display = "none";
     }
+    if (Cname.style.display === "block") {
+        Cname.style.display = "none";
+    }
+    if (Email.style.display === "block") {
+        Email.style.display = "none";
+    }
     else {
         return
     }   
@@ -237,6 +245,12 @@ function ShowCalc() {
     }
     if (FinalPricecalc.style.display === "none") {
         FinalPricecalc.style.display = "block";
+    }
+    if (Cname.style.display === "none") {
+        Cname.style.display = "block";
+    }
+    if (Email.style.display === "none") {
+        Email.style.display = "block";
     }
     else {
         return 
