@@ -56,6 +56,7 @@ group :development do
   gem 'capistrano-bundler', '>= 1.1.0'
   gem 'rvm1-capistrano3', require: false
   gem 'capistrano3-puma'
+  gem 'faker'
 end
 
 group :test do
@@ -64,6 +65,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -73,4 +75,4 @@ gem 'devise', '~> 4.2'
 
 gem 'rails_admin', github: 'sferik/rails_admin'
 
-gem 'pg', '~> 0.18.4'
+#gem 'pg', '~> 0.18.4'
