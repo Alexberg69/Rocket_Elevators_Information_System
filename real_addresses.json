@@ -3,7 +3,7 @@
         {
             "address1": "1745 T Street Southeast",
             "address2": "",
-            "city": "Washington",
+            "city": "'Washington'",
             "state": "DC",
             "postalCode": "20020",
             "coordinates": {
@@ -14,7 +14,7 @@
         {
             "address1": "6007 Applegate Lane",
             "address2": "",
-            "city": "Louisville",
+            "city": "'Louisville'",
             "state": "KY",
             "postalCode": "40219",
             "coordinates": {
@@ -25,7 +25,7 @@
         {
             "address1": "560 Penstock Drive",
             "address2": "",
-            "city": "Grass Valley",
+            "city": "'Grass Valley'",
             "state": "CA",
             "postalCode": "95945",
             "coordinates": {
@@ -36,7 +36,7 @@
         {
             "address1": "150 Carter Street",
             "address2": "",
-            "city": "Manchester",
+            "city": "'Manchester'",
             "state": "CT",
             "postalCode": "06040",
             "coordinates": {
@@ -47,7 +47,7 @@
         {
             "address1": "2721 Lindsay Avenue",
             "address2": "",
-            "city": "Louisville",
+            "city": "'Louisville'",
             "state": "KY",
             "postalCode": "40206",
             "coordinates": {
@@ -58,7 +58,7 @@
         {
             "address1": "18 Densmore Drive",
             "address2": "",
-            "city": "Essex",
+            "city": "'Essex'",
             "state": "VT",
             "postalCode": "05452",
             "coordinates": {
@@ -69,7 +69,7 @@
         {
             "address1": "637 Britannia Drive",
             "address2": "",
-            "city": "Vallejo",
+            "city": "'Vallejo'",
             "state": "CA",
             "postalCode": "94591",
             "coordinates": {
@@ -80,7 +80,7 @@
         {
             "address1": "5601 West Crocus Drive",
             "address2": "",
-            "city": "Glendale",
+            "city": "'Glendale'",
             "state": "AZ",
             "postalCode": "85306",
             "coordinates": {
@@ -91,7 +91,7 @@
         {
             "address1": "5403 Illinois Avenue",
             "address2": "",
-            "city": "Nashville",
+            "city": "'Nashville'",
             "state": "TN",
             "postalCode": "37209",
             "coordinates": {
@@ -102,7 +102,7 @@
         {
             "address1": "8821 West Myrtle Avenue",
             "address2": "",
-            "city": "Glendale",
+            "city": "'Glendale'",
             "state": "AZ",
             "postalCode": "85305",
             "coordinates": {
@@ -113,7 +113,7 @@
         {
             "address1": "2203 7th Street Road",
             "address2": "",
-            "city": "Louisville",
+            "city": "'Louisville'",
             "state": "KY",
             "postalCode": "40208",
             "coordinates": {
@@ -124,7 +124,7 @@
         {
             "address1": "6463 Vrain Street",
             "address2": "",
-            "city": "Arvada",
+            "city": "'Arvada'",
             "state": "CO",
             "postalCode": "80003",
             "coordinates": {
@@ -135,7 +135,7 @@
         {
             "address1": "87 Horseshoe Drive",
             "address2": "",
-            "city": "West Windsor",
+            "city": "'West Windsor'",
             "state": "VT",
             "postalCode": "05037",
             "coordinates": {
@@ -146,7 +146,7 @@
         {
             "address1": "60 Desousa Drive",
             "address2": "",
-            "city": "Manchester",
+            "city": "'Manchester'",
             "state": "CT",
             "postalCode": "06040",
             "coordinates": {
@@ -157,7 +157,7 @@
         {
             "address1": "4 Old Colony Way",
             "address2": "",
-            "city": "Yarmouth",
+            "city": "'Yarmouth'",
             "state": "MA",
             "postalCode": "02664",
             "coordinates": {
@@ -168,7 +168,7 @@
         {
             "address1": "314 South 17th Street",
             "address2": "",
-            "city": "Nashville",
+            "city": "'Nashville'",
             "state": "TN",
             "postalCode": "37206",
             "coordinates": {
@@ -179,7 +179,7 @@
         {
             "address1": "1649 Timberridge Court",
             "address2": "",
-            "city": "Fayetteville",
+            "city": "'Fayetteville'",
             "state": "AR",
             "postalCode": "72704",
             "coordinates": {
@@ -190,7 +190,7 @@
         {
             "address1": "5461 West Shades Valley Drive",
             "address2": "",
-            "city": "Montgomery",
+            "city": "'Montgomery'",
             "state": "AL",
             "postalCode": "36108",
             "coordinates": {
@@ -201,7 +201,7 @@
         {
             "address1": "629 Debbie Drive",
             "address2": "",
-            "city": "Nashville",
+            "city": "'Nashville'",
             "state": "TN",
             "postalCode": "37076",
             "coordinates": {
@@ -212,7 +212,7 @@
         {
             "address1": "22572 Toreador Drive",
             "address2": "",
-            "city": "Salinas",
+            "city": "'Salinas'",
             "state": "CA",
             "postalCode": "93908",
             "coordinates": {
@@ -223,7 +223,7 @@
         {
             "address1": "3034 Mica Street",
             "address2": "",
-            "city": "Fayetteville",
+            "city": "'Fayetteville'",
             "state": "AR",
             "postalCode": "72704",
             "coordinates": {
@@ -234,7 +234,7 @@
         {
             "address1": "3729 East Mission Boulevard",
             "address2": "",
-            "city": "Fayetteville",
+            "city": "'Fayetteville'",
             "state": "AR",
             "postalCode": "72703",
             "coordinates": {
@@ -245,7 +245,7 @@
         {
             "address1": "5114 Greentree Drive",
             "address2": "",
-            "city": "Nashville",
+            "city": "'Nashville'",
             "state": "TN",
             "postalCode": "37211",
             "coordinates": {
@@ -256,7 +256,7 @@
         {
             "address1": "3466 Southview Avenue",
             "address2": "",
-            "city": "Montgomery",
+            "city": "'Montgomery'",
             "state": "AL",
             "postalCode": "36111",
             "coordinates": {
@@ -267,7 +267,7 @@
         {
             "address1": "1513 Cathy Street",
             "address2": "",
-            "city": "Savannah",
+            "city": "'Savannah'",
             "state": "GA",
             "postalCode": "31415",
             "coordinates": {
@@ -278,7 +278,7 @@
         {
             "address1": "600 West 19th Avenue",
             "address2": "APT B",
-            "city": "Anchorage",
+            "city": "'Anchorage'",
             "state": "AK",
             "postalCode": "99503",
             "coordinates": {
@@ -289,7 +289,7 @@
         {
             "address1": "1208 Elkader Court North",
             "address2": "",
-            "city": "Nashville",
+            "city": "'Nashville'",
             "state": "TN",
             "postalCode": "37013",
             "coordinates": {
@@ -300,7 +300,7 @@
         {
             "address1": "210 Green Road",
             "address2": "",
-            "city": "Manchester",
+            "city": "'Manchester'",
             "state": "CT",
             "postalCode": "06042",
             "coordinates": {
@@ -311,7 +311,7 @@
         {
             "address1": "49548 Road 200",
             "address2": "",
-            "city": "O'Neals",
+            "city": "'O'Neals'",
             "state": "CA",
             "postalCode": "93645",
             "coordinates": {
@@ -322,7 +322,7 @@
         {
             "address1": "81 Seaton Place Northwest",
             "address2": "",
-            "city": "Washington",
+            "city": "'Washington'",
             "state": "DC",
             "postalCode": "20001",
             "coordinates": {
@@ -333,7 +333,7 @@
         {
             "address1": "1267 Martin Street",
             "address2": "#203",
-            "city": "Nashville",
+            "city": "'Nashville'",
             "state": "TN",
             "postalCode": "37203",
             "coordinates": {
@@ -344,7 +344,7 @@
         {
             "address1": "7431 Candace Way",
             "address2": "#1",
-            "city": "Louisville",
+            "city": "'Louisville'",
             "state": "KY",
             "postalCode": "40214",
             "coordinates": {
@@ -355,7 +355,7 @@
         {
             "address1": "1407 Walden Court",
             "address2": "",
-            "city": "Crofton",
+            "city": "'Crofton'",
             "state": "MD",
             "postalCode": "21114",
             "coordinates": {
@@ -366,7 +366,7 @@
         {
             "address1": "5906 Milton Avenue",
             "address2": "",
-            "city": "Deale",
+            "city": "'Deale'",
             "state": "MD",
             "postalCode": "20751",
             "coordinates": {
@@ -377,7 +377,7 @@
         {
             "address1": "74 Springfield Street",
             "address2": "B",
-            "city": "Agawam",
+            "city": "'Agawam'",
             "state": "MA",
             "postalCode": "01001",
             "coordinates": {
@@ -388,7 +388,7 @@
         {
             "address1": "2905 Stonebridge Court",
             "address2": "",
-            "city": "Norman",
+            "city": "'Norman'",
             "state": "OK",
             "postalCode": "73071",
             "coordinates": {
@@ -399,7 +399,7 @@
         {
             "address1": "20930 Todd Valley Road",
             "address2": "",
-            "city": "Foresthill",
+            "city": "'Foresthill'",
             "state": "CA",
             "postalCode": "95631",
             "coordinates": {
@@ -410,7 +410,7 @@
         {
             "address1": "5928 West Mauna Loa Lane",
             "address2": "",
-            "city": "Glendale",
+            "city": "'Glendale'",
             "state": "AZ",
             "postalCode": "85306",
             "coordinates": {
@@ -421,7 +421,7 @@
         {
             "address1": "802 Madison Street Northwest",
             "address2": "",
-            "city": "Washington",
+            "city": "'Washington'",
             "state": "DC",
             "postalCode": "20011",
             "coordinates": {
@@ -432,7 +432,7 @@
         {
             "address1": "2811 Battery Place Northwest",
             "address2": "",
-            "city": "Washington",
+            "city": "'Washington'",
             "state": "DC",
             "postalCode": "20016",
             "coordinates": {
@@ -443,7 +443,7 @@
         {
             "address1": "210 Lacross Lane",
             "address2": "",
-            "city": "Westmore",
+            "city": "'Westmore'",
             "state": "VT",
             "postalCode": "05860",
             "coordinates": {
@@ -454,7 +454,7 @@
         {
             "address1": "2010 Rising Hill Drive",
             "address2": "",
-            "city": "Norman",
+            "city": "'Norman'",
             "state": "OK",
             "postalCode": "73071",
             "coordinates": {
@@ -465,6 +465,7 @@
         {
             "address1": "388 East Main Street",
             "address2": "",
+            "city": "'Pennsylvanie'",
             "state": "VT",
             "postalCode": "05753",
             "coordinates": {
@@ -475,7 +476,7 @@
         {
             "address1": "450 Kinhawk Drive",
             "address2": "",
-            "city": "Nashville",
+            "city": "'Nashville'",
             "state": "TN",
             "postalCode": "37211",
             "coordinates": {
@@ -486,7 +487,7 @@
         {
             "address1": "131 Westerly Street",
             "address2": "",
-            "city": "Manchester",
+            "city": "'Manchester'",
             "state": "CT",
             "postalCode": "06042",
             "coordinates": {
@@ -497,7 +498,7 @@
         {
             "address1": "308 Woodleaf Court",
             "address2": "",
-            "city": "Glen Burnie",
+            "city": "'Glen Burnie'",
             "state": "MD",
             "postalCode": "21061",
             "coordinates": {
@@ -508,7 +509,7 @@
         {
             "address1": "8502 Madrone Avenue",
             "address2": "",
-            "city": "Louisville",
+            "city": "'Louisville'",
             "state": "KY",
             "postalCode": "40258",
             "coordinates": {
@@ -519,7 +520,7 @@
         {
             "address1": "23 Sable Run Lane",
             "address2": "",
-            "city": "Methuen",
+            "city": "'Methuen'",
             "state": "MA",
             "postalCode": "01844",
             "coordinates": {
@@ -530,7 +531,7 @@
         {
             "address1": "716 Waller Road",
             "address2": "",
-            "city": "Brentwood",
+            "city": "'Brentwood'",
             "state": "TN",
             "postalCode": "37027",
             "coordinates": {
@@ -541,7 +542,7 @@
         {
             "address1": "416 McIver Street",
             "address2": "",
-            "city": "Nashville",
+            "city": "'Nashville'",
             "state": "TN",
             "postalCode": "37211",
             "coordinates": {
@@ -552,7 +553,7 @@
         {
             "address1": "1508 Massachusetts Avenue Southeast",
             "address2": "",
-            "city": "Washington",
+            "city": "'Washington'",
             "state": "DC",
             "postalCode": "20003",
             "coordinates": {
@@ -563,7 +564,7 @@
         {
             "address1": "5615 West Villa Maria Drive",
             "address2": "",
-            "city": "Glendale",
+            "city": "'Glendale'",
             "state": "AZ",
             "postalCode": "85308",
             "coordinates": {
@@ -574,7 +575,7 @@
         {
             "address1": "3162 Martin Luther King Junior Boulevard",
             "address2": "#2",
-            "city": "Fayetteville",
+            "city": "'Fayetteville'",
             "state": "AR",
             "postalCode": "72704",
             "coordinates": {
@@ -585,7 +586,7 @@
         {
             "address1": "5306 Ritchie Highway",
             "address2": "",
-            "city": "Baltimore",
+            "city": "'Baltimore'",
             "state": "MD",
             "postalCode": "21225",
             "coordinates": {
@@ -596,7 +597,7 @@
         {
             "address1": "109 Summit Street",
             "address2": "",
-            "city": "Burlington",
+            "city": "'Burlington'",
             "state": "VT",
             "postalCode": "05401",
             "coordinates": {
@@ -607,7 +608,7 @@
         {
             "address1": "816 West 19th Avenue",
             "address2": "",
-            "city": "Anchorage",
+            "city": "'Anchorage'",
             "state": "AK",
             "postalCode": "99503",
             "coordinates": {
@@ -618,7 +619,7 @@
         {
             "address1": "172 Alburg Springs Road",
             "address2": "",
-            "city": "Alburgh",
+            "city": "'Alburgh'",
             "state": "VT",
             "postalCode": "05440",
             "coordinates": {
@@ -629,7 +630,7 @@
         {
             "address1": "159 Downey Drive",
             "address2": "A",
-            "city": "Manchester",
+            "city": "'Manchester'",
             "state": "CT",
             "postalCode": "06040",
             "coordinates": {
@@ -640,7 +641,7 @@
         {
             "address1": "125 John Street",
             "address2": "",
-            "city": "Santa Cruz",
+            "city": "'Santa Cruz'",
             "state": "CA",
             "postalCode": "95060",
             "coordinates": {
@@ -651,7 +652,7 @@
         {
             "address1": "1101 Lotus Avenue",
             "address2": "",
-            "city": "Glen Burnie",
+            "city": "'Glen Burnie'",
             "state": "MD",
             "postalCode": "21061",
             "coordinates": {
@@ -662,7 +663,7 @@
         {
             "address1": "8376 Albacore Drive",
             "address2": "",
-            "city": "Pasadena",
+            "city": "'Pasadena'",
             "state": "MD",
             "postalCode": "21122",
             "coordinates": {
@@ -673,7 +674,7 @@
         {
             "address1": "491 Arabian Way",
             "address2": "",
-            "city": "Grand Junction",
+            "city": "'Grand Junction'",
             "state": "CO",
             "postalCode": "81504",
             "coordinates": {
@@ -684,7 +685,7 @@
         {
             "address1": "12245 West 71st Place",
             "address2": "",
-            "city": "Arvada",
+            "city": "'Arvada'",
             "state": "CO",
             "postalCode": "80004",
             "coordinates": {
@@ -695,7 +696,7 @@
         {
             "address1": "80 North East Street",
             "address2": "#4",
-            "city": "Holyoke",
+            "city": "'Holyoke'",
             "state": "MA",
             "postalCode": "01040",
             "coordinates": {
@@ -706,7 +707,7 @@
         {
             "address1": "4695 East Huntsville Road",
             "address2": "",
-            "city": "Fayetteville",
+            "city": "'Fayetteville'",
             "state": "AR",
             "postalCode": "72701",
             "coordinates": {
@@ -717,7 +718,7 @@
         {
             "address1": "310 Timrod Road",
             "address2": "",
-            "city": "Manchester",
+            "city": "'Manchester'",
             "state": "CT",
             "postalCode": "06040",
             "coordinates": {
@@ -728,7 +729,7 @@
         {
             "address1": "1364 Capri Drive",
             "address2": "",
-            "city": "Panama City",
+            "city": "'Panama City'",
             "state": "FL",
             "postalCode": "32405",
             "coordinates": {
@@ -739,7 +740,7 @@
         {
             "address1": "132 Laurel Green Court",
             "address2": "",
-            "city": "Savannah",
+            "city": "'Savannah'",
             "state": "GA",
             "postalCode": "31419",
             "coordinates": {
@@ -750,7 +751,7 @@
         {
             "address1": "6657 West Rose Garden Lane",
             "address2": "",
-            "city": "Glendale",
+            "city": "'Glendale'",
             "state": "AZ",
             "postalCode": "85308",
             "coordinates": {
@@ -761,7 +762,7 @@
         {
             "address1": "519 West 75th Avenue",
             "address2": "#APT 000003",
-            "city": "Anchorage",
+            "city": "'Anchorage'",
             "state": "AK",
             "postalCode": "99518",
             "coordinates": {
@@ -772,7 +773,7 @@
         {
             "address1": "31353 Santa Elena Way",
             "address2": "",
-            "city": "Union City",
+            "city": "'Union City'",
             "state": "CA",
             "postalCode": "94587",
             "coordinates": {
@@ -783,7 +784,7 @@
         {
             "address1": "8398 West Denton Lane",
             "address2": "",
-            "city": "Glendale",
+            "city": "'Glendale'",
             "state": "AZ",
             "postalCode": "85305",
             "coordinates": {
@@ -794,7 +795,7 @@
         {
             "address1": "700 Winston Place",
             "address2": "",
-            "city": "Anchorage",
+            "city": "'Anchorage'",
             "state": "AK",
             "postalCode": "99504",
             "coordinates": {
@@ -805,7 +806,7 @@
         {
             "address1": "232 Maine Avenue",
             "address2": "",
-            "city": "Panama City",
+            "city": "'Panama City'",
             "state": "FL",
             "postalCode": "32401",
             "coordinates": {
@@ -816,7 +817,7 @@
         {
             "address1": "1 Kempf Drive",
             "address2": "",
-            "city": "Easton",
+            "city": "'Easton'",
             "state": "MA",
             "postalCode": "02375",
             "coordinates": {
@@ -827,7 +828,7 @@
         {
             "address1": "5811 Crossings Boulevard",
             "address2": "",
-            "city": "Nashville",
+            "city": "'Nashville'",
             "state": "TN",
             "postalCode": "37013",
             "coordinates": {
@@ -838,7 +839,7 @@
         {
             "address1": "5108 Franklin Street",
             "address2": "",
-            "city": "Savannah",
+            "city": "'Savannah'",
             "state": "GA",
             "postalCode": "31405",
             "coordinates": {
@@ -849,7 +850,7 @@
         {
             "address1": "913 Fallview Trail",
             "address2": "",
-            "city": "Nashville",
+            "city": "'Nashville'",
             "state": "TN",
             "postalCode": "37211",
             "coordinates": {
@@ -860,6 +861,7 @@
         {
             "address1": "270 Chrissy's Court",
             "address2": "",
+            "city": "'Bristol'",
             "state": "VT",
             "postalCode": "05443",
             "coordinates": {
@@ -870,7 +872,7 @@
         {
             "address1": "130 Old Route 103",
             "address2": "",
-            "city": "Chester",
+            "city": "'Chester'",
             "state": "VT",
             "postalCode": "05143",
             "coordinates": {
@@ -881,7 +883,7 @@
         {
             "address1": "10826 Pointe Royal Drive",
             "address2": "",
-            "city": "Bakersfield",
+            "city": "'Bakersfield'",
             "state": "CA",
             "postalCode": "93311",
             "coordinates": {
@@ -892,7 +894,7 @@
         {
             "address1": "74 Ranch Drive",
             "address2": "",
-            "city": "Montgomery",
+            "city": "'Montgomery'",
             "state": "AL",
             "postalCode": "36109",
             "coordinates": {
@@ -903,7 +905,7 @@
         {
             "address1": "6601 West Ocotillo Road",
             "address2": "",
-            "city": "Glendale",
+            "city": "'Glendale'",
             "state": "AZ",
             "postalCode": "85301",
             "coordinates": {
@@ -914,7 +916,7 @@
         {
             "address1": "19416 Barclay Road",
             "address2": "",
-            "city": "Castro Valley",
+            "city": "'Castro Valley'",
             "state": "CA",
             "postalCode": "94546",
             "coordinates": {
@@ -925,7 +927,7 @@
         {
             "address1": "1347 Blackwalnut Court",
             "address2": "",
-            "city": "Annapolis",
+            "city": "'Annapolis'",
             "state": "MD",
             "postalCode": "21403",
             "coordinates": {
@@ -936,7 +938,7 @@
         {
             "address1": "1770 Colony Way",
             "address2": "",
-            "city": "Fayetteville",
+            "city": "'Fayetteville'",
             "state": "AR",
             "postalCode": "72704",
             "coordinates": {
@@ -947,7 +949,7 @@
         {
             "address1": "165 Saint John Street",
             "address2": "",
-            "city": "Manchester",
+            "city": "'Manchester'",
             "state": "CT",
             "postalCode": "06040",
             "coordinates": {
@@ -958,7 +960,7 @@
         {
             "address1": "2409 Research Boulevard",
             "address2": "",
-            "city": "Fort Collins",
+            "city": "'Fort Collins'",
             "state": "CO",
             "postalCode": "80526",
             "coordinates": {
@@ -969,7 +971,7 @@
         {
             "address1": "1903 Bashford Manor Lane",
             "address2": "",
-            "city": "Louisville",
+            "city": "'Louisville'",
             "state": "KY",
             "postalCode": "40218",
             "coordinates": {
@@ -980,7 +982,7 @@
         {
             "address1": "8315 Surf Drive",
             "address2": "",
-            "city": "Panama City Beach",
+            "city": "'Panama City Beach'",
             "state": "FL",
             "postalCode": "32408",
             "coordinates": {
@@ -991,7 +993,7 @@
         {
             "address1": "3301 Old Muldoon Road",
             "address2": "",
-            "city": "Anchorage",
+            "city": "'Anchorage'",
             "state": "AK",
             "postalCode": "99504",
             "coordinates": {
@@ -1002,7 +1004,7 @@
         {
             "address1": "8800 Cordell Circle",
             "address2": "#APT 000003",
-            "city": "Anchorage",
+            "city": "'Anchorage'",
             "state": "AK",
             "postalCode": "99502",
             "coordinates": {
@@ -1013,7 +1015,7 @@
         {
             "address1": "117 East Cook Avenue",
             "address2": "",
-            "city": "Anchorage",
+            "city": "'Anchorage'",
             "state": "AK",
             "postalCode": "99501",
             "coordinates": {
@@ -1024,7 +1026,7 @@
         {
             "address1": "6231 North 67th Avenue",
             "address2": "#241",
-            "city": "Glendale",
+            "city": "'Glendale'",
             "state": "AZ",
             "postalCode": "85301",
             "coordinates": {
@@ -1035,7 +1037,7 @@
         {
             "address1": "8505 Waters Avenue",
             "address2": "#66",
-            "city": "Savannah",
+            "city": "'Savannah'",
             "state": "GA",
             "postalCode": "31406",
             "coordinates": {
@@ -1046,7 +1048,7 @@
         {
             "address1": "7 Underwood Place Northwest",
             "address2": "",
-            "city": "Washington",
+            "city": "'Washington'",
             "state": "DC",
             "postalCode": "20012",
             "coordinates": {
@@ -1057,7 +1059,7 @@
         {
             "address1": "21950 Arnold Center Road",
             "address2": "",
-            "city": "Carson",
+            "city": "'Carson'",
             "state": "CA",
             "postalCode": "90810",
             "coordinates": {
@@ -1068,7 +1070,7 @@
         {
             "address1": "1427 South Carolina Avenue Southeast",
             "address2": "",
-            "city": "Washington",
+            "city": "'Washington'",
             "state": "DC",
             "postalCode": "20003",
             "coordinates": {
@@ -1079,7 +1081,7 @@
         {
             "address1": "1420 Turtleback Trail",
             "address2": "",
-            "city": "Panama City",
+            "city": "'Panama City'",
             "state": "FL",
             "postalCode": "32413",
             "coordinates": {
