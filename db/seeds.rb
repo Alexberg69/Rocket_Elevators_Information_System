@@ -24,25 +24,79 @@ require 'faker'
 #end
 
 # generate 20 users
+# (22..122).each do |id|
+#     Customer.create!(
+#     #each customer is assigned an id from 23-123
+#         id: id,
+#         user_id: rand(22..122),
+#         company_headquarters_address_id: rand(23..123),
+#         customers_creation_date: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
+#         compagny_name: Faker::Name.name,
+#         full_name_of_the_company_contact: Faker::Name.name,
+#         company_contact_phone: Faker::PhoneNumber.phone_number,
+#         email_of_the_company_contact: Faker::Internet.email,
+#         company_description: Faker::Name.name,
+#         full_name_of_service_technical_authority: Faker::Name.name,
+#         technical_authority_phone_for_service: Faker::PhoneNumber.phone_number,
+#         technical_manager_email_for_service: Faker::Internet.email
+
+#     )
+# end
+
+# (23..123).each do |id|
+#     Building.create!(
+#     #each customer is assigned an id from 23-123
+#         id: id,
+#         customer_id: rand(23..123),
+#         address_of_the_building_id: rand(125..247) ,
+#         full_name_of_the_building_administrator: Faker::Name.name,
+#         phone_number_of_the_building_administrator: Faker::PhoneNumber.phone_number,
+#         email_of_the_administrator: Faker::Internet.email,
+#         full_name_of_the_technical_contact_for_the_building: Faker::Name.name,
+#         technical_contact_phone_for_the_building: Faker::PhoneNumber.phone_number,
+#         technical_contact_email_for_the_building: Faker::Internet.email,
+#         created_at: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
+#         updated_at: Faker::Date.between(from: '2018-01-01', to: '2020-12-31')
+
+#     )
+# end
+
+# (23..123).each do |id|
+#     BuildingDetail.create!(
+#     #each customer is assigned an id from 23-123
+#         id: id,
+#         building_id: rand(23..123),
+#         information_key:
+#         value:
+#         created_at: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
+#         updated_at: Faker::Date.between(from: '2018-01-01', to: '2020-12-31')
+
+#     )
+# end
+
 (23..123).each do |id|
-    Customer.create!(
+    Battery.create!(
     #each customer is assigned an id from 23-123
         id: id,
-        user_id: rand(23..123),
-        company_headquarters_address: rand(23..123),
-        customers_creation_date: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
-        compagny_name: Faker::Name.name,
-        full_name_of_the_company_contact: Faker::Name.name,
-        company_contact_phone: Faker::PhoneNumber.phone_number,
-        email_of_the_company_contact: Faker::Internet.email,
-        company_description: Faker::Name.name,
-        full_name_of_service_technical_authority: Faker::Name.name,
-        technical_authority_phone_for_service: Faker::PhoneNumber.phone_number,
-        technical_manager_email_for_service: Faker::Internet.email
+        building_id: rand(23..123),
+        employee_id: rand(1..21),
+        status: "Active",
+        date_of_commissioning: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
+        date_of_last_inspection: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
+        certificate_of_operations: Faker::Name.name,
+        information: Faker::PhoneNumber.phone_number,
+        notes: Faker::Internet.email,
+        type = "#{types.sample(1).first}"
 
     )
 end
 
+types [
+    ["residential"],
+    ["commercial"], 
+    ["corporate"], 
+    ["hybrid"]
+]
 # addresses_list = [
 #     [ "Home", "active", "Customer", "1066 Rue Thierry", nil, "Montreal", "H8N 2Y6", "Canada", nil],
 #     [ "Business", "active", "Building", "3267 Rue Evelyn", nil, "Montreal", "H4G 1N8", "Canada", nil],
@@ -174,21 +228,21 @@ end
 #     [ "Business", "active", "Building", "4468 Wellington", "204", "Gatineau", "H4G 1W5", "Canada", nil]
 # ]
 
-#addresses_list.each do |type_of_address, status, entity, number_and_street, suite_or_appartment, city, postal_code, country, notes|
+# addresses_list.each do |type_of_address, status, entity, number_and_street, suite_or_appartment, city, postal_code, country, notes|
 
-    #Address.create!(
-        #type_of_address: type_of_address, 
-        #status: status, 
-        #entity: entity, 
-        #number_and_street: number_and_street,
-        #suite_or_appartment: suite_or_appartment, 
-        #city: city,
-        #postal_code: postal_code,
-        #country: country,
-        #notes: notes
-    #)
-    #puts "Addresses done!"
-#end
+#     Address.create!(
+#         type_of_address: type_of_address, 
+#         status: status, 
+#         entity: entity, 
+#         number_and_street: number_and_street,
+#         suite_or_appartment: suite_or_appartment, 
+#         city: city,
+#         postal_code: postal_code,
+#         country: country,
+#         notes: notes
+#     )
+#     puts "Addresses done!"
+# end
 
 #users_list = [
     #[ "nicolas.genest@codeboxx.biz", "123456", nil, nil, nil, DateTime.now, DateTime.now, 1, "Genest", "Nicolas", "CEO" ],
