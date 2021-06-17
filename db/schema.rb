@@ -147,6 +147,8 @@ ActiveRecord::Schema.define(version: 2021_06_15_194731) do
     t.string "total_price_of_elevators"
     t.string "installation_fees"
     t.string "final_price"
+    t.string "company_name"
+    t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
