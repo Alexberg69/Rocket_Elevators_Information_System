@@ -30,9 +30,6 @@ data_hash = JSON.parse(file)
     )
 end
 
-
-
-
 address_type = ["Billing", "Shipping", "Home", "Business"]
 address_status = ["Active", "Inactive"]
 address_entity = ["Building", "Customer"]
@@ -43,6 +40,7 @@ address_of_the_building_array = [*1..99]
 building_id_array = [*1..99]
 buildings_id_array = [*1..99]
 employee_id_array = [*1..22]
+model_type = ["Standard", "Premium", "Excelium"]
 
 data_hash['addresses'].each do |address|
      Address.create(type_of_address: address_type[rand(4)], status: address_status[rand(2)], entity: address_entity[rand(2)], number_and_street: address['address1'], suite_or_appartment: address['address2'], city: address['city'], postal_code: address['postalCode'], country: address['state'], notes: nil)
@@ -105,12 +103,12 @@ end
         user_id: user_id_array.delete(user_id_array.sample),
         company_headquarters_address_id: company_headquarters_address_array.delete(company_headquarters_address_array.sample),
         customers_creation_date: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
-        compagny_name: Faker::Name.name,
-        full_name_of_the_company_contact: Faker::Name.name,
+        compagny_name: Faker::Company.name.gsub(/\W/, ''),
+        full_name_of_the_company_contact: Faker::Name.name.gsub(/\W/, ''),
         company_contact_phone: Faker::PhoneNumber.phone_number,
         email_of_the_company_contact: Faker::Internet.email,
-        company_description: Faker::Name.name,
-        full_name_of_service_technical_authority: Faker::Name.name,
+        company_description: Faker::Lorem.word,
+        full_name_of_service_technical_authority: Faker::Name.name.gsub(/\W/, ''),
         technical_authority_phone_for_service: Faker::PhoneNumber.phone_number,
         technical_manager_email_for_service: Faker::Internet.email
 
@@ -122,10 +120,10 @@ end
     #each customer is assigned an id from 23-123
         customer_id: customer_id_array.delete(customer_id_array.sample),
         address_of_the_building_id: address_of_the_building_array.delete(address_of_the_building_array.sample),
-        full_name_of_the_building_administrator: Faker::Name.name,
+        full_name_of_the_building_administrator: Faker::Name.name.gsub(/\W/, ''),
         phone_number_of_the_building_administrator: Faker::PhoneNumber.phone_number,
         email_of_the_administrator: Faker::Internet.email,
-        full_name_of_the_technical_contact_for_the_building: Faker::Name.name,
+        full_name_of_the_technical_contact_for_the_building: Faker::Name.name.gsub(/\W/, ''),
         technical_contact_phone_for_the_building: Faker::PhoneNumber.phone_number,
         technical_contact_email_for_the_building: Faker::Internet.email,
         created_at: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
@@ -159,7 +157,7 @@ end
         status: random_status.sample,
         date_of_commissioning: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
         date_of_last_inspection: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
-        certificate_of_operations: Faker::Name.name,
+        certificate_of_operations: Faker::Lorem.word,
         information: Faker::Lorem.word,
         notes: Faker::Lorem.word
         
@@ -167,7 +165,7 @@ end
     )
 end
 
-(1..198).each do |column|
+(1..700).each do |column|
     Column.create!(
     #each customer is assigned an id from 23-123
         battery_id: rand(1..99),
@@ -179,10 +177,11 @@ end
     )
 end
 
-(1..1000).each do |elevator|
+(1..2000).each do |elevator|
     Elevator.create!(
     #each customer is assigned an id from 23-123
-        column_id: rand(1..198),
+        column_id: rand(1..700),
+        model: model_type.sample,
         elevator_type: random_type.sample,
         serial_number: Faker::Number.between(from: 15262888, to: 25269889),
         status: random_status.sample,
