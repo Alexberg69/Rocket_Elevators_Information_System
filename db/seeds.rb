@@ -104,8 +104,8 @@ end
         user_id: user_id_array.delete(user_id_array.sample),
         company_headquarters_address_id: company_headquarters_address_array.delete(company_headquarters_address_array.sample),
         customers_creation_date: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
-        compagny_name: Faker::Name.name,
-        full_name_of_the_company_contact: Faker::Name.name,
+        compagny_name: Faker::Company.name,
+        full_name_of_the_company_contact: Faker::Company.name,
         company_contact_phone: Faker::PhoneNumber.phone_number,
         email_of_the_company_contact: Faker::Internet.email,
         company_description: Faker::Name.name,
@@ -192,4 +192,3 @@ end
         notes: Faker::Lorem.word
     )
 end
-
