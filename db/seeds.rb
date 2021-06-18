@@ -41,6 +41,7 @@ customer_id_array = [*1..99]
 company_headquarters_address_array = [*1..99]
 address_of_the_building_array = [*1..99]
 building_id_array = [*1..99]
+buildings_id_array = [*1..99]
 employee_id_array = [*1..22]
 
 data_hash['addresses'].each do |address|
@@ -48,27 +49,27 @@ data_hash['addresses'].each do |address|
 end
 
 users_list = [
-    [ "nicolas.genest@codeboxx.biz", "123456", nil, nil, nil, DateTime.now, DateTime.now, 1, "Genest", "Nicolas", "CEO" ],
-    [ "nadya.fortier@codeboxx.biz", "2345678", nil, nil, nil, DateTime.now, DateTime.now, 2, "Nadya", "Fortier", "Director"],
-    [ "martin.chantal@codeboxx.biz", "345678", nil, nil, nil, DateTime.now, DateTime.now, 3, "Chantal", "Martin", "Assistant Director" ],
-    [ "mathieu.houde@codeboxx.biz", "456788", nil, nil, nil, DateTime.now, DateTime.now, 4, "Houde", "Mathieu", "Captain" ],
-    [ "patrick.thibault@codeboxx.biz", "564789", nil, nil, nil, DateTime.now, DateTime.now, 5, "Thibault", "Patrick", "Captain" ],
-    [ "david.boutin@codeboxx.biz", "664789", nil, nil, nil, DateTime.now, DateTime.now, 6, "Boutin", "David", "Engineer" ],
-    [ "mathieu.lortie@codeboxx.biz", "764789", nil, nil, nil, DateTime.now, DateTime.now, 7, "Lortie", "Mathieu", "Engineer" ],
-    [ "thomas.carrier@codeboxx.biz", "8564789", nil, nil, nil, DateTime.now, DateTime.now, 8, "Carrier", "Thomas", "Engineer" ],
-    [ "serge.savoie@codeboxx.biz", "964789", nil, nil, nil, DateTime.now, DateTime.now, 9, "Savoie", "Serge", "Engineer" ],
-    [ "francis.patry-jessop@codeboxx.biz", "574789", nil, nil, nil, DateTime.now, DateTime.now, 10, "Patry-Jessop", "Francis", "Engineer" ],
-    [ "mathieu.lefrancois@codeboxx.biz", "584789", nil, nil, nil, DateTime.now, DateTime.now, 11, "Lefrancois", "Mathieu", "Engineer" ],
-    [ "david.larochelle@codeboxx.biz", "594789", nil, nil, nil, DateTime.now, DateTime.now, 12, "Larochelle", "David", "Engineer" ],
-    [ "nicolas.pineault@codeboxx.biz", "565789", nil, nil, nil, DateTime.now, DateTime.now, 13, "Pineault", "Nicolas", "Engineer" ],
-    [ "david.amyot@codeboxx.biz", "564689", nil, nil, nil, DateTime.now, DateTime.now, 14, "Amyot", "David", "Engineer" ],
-    [ "remi.gagnon@codeboxx.biz", "564889", nil, nil, nil, DateTime.now, DateTime.now, 15, "Gagnon", "Remi", "Engineer" ],
-    [ "timothy.wever@codeboxx.biz", "569989", nil, nil, nil, DateTime.now, DateTime.now, 16, "Wever", "Timothy", "Developer" ],
-    [ "kiril.kleinerman@codeboxx.biz", "664789", nil, nil, nil, DateTime.now, DateTime.now, 17, "Kleinerman", "Kiril", "Developer" ],
-    [ "emmanuela.derilus@codeboxx.biz", "564799", nil, nil, nil, DateTime.now, DateTime.now, 18, "Derilus", "Emmanuela", "Developer" ],
-    [ "abdul.akeeb@codebozz.biz", "564289", nil, nil, nil, DateTime.now, DateTime.now, 19, "Akeeb", "Abdul", "Developer" ],
-    [ "krista.sheely@codeboxx.biz", "564989", nil, nil, nil, DateTime.now, DateTime.now, 20, "Sheely", "Krista", "Developer" ],
-    [ "jonathan.murray@codeboxx.biz", "564989", nil, nil, nil, DateTime.now, DateTime.now, 21, "Murray", "Jonathan", "Developer" ]
+    [ "nicolas.genest@codeboxx.biz", "123456", nil, nil, nil, DateTime.now, DateTime.now, 100, "Genest", "Nicolas", "CEO" ],
+    [ "nadya.fortier@codeboxx.biz", "2345678", nil, nil, nil, DateTime.now, DateTime.now, 101, "Nadya", "Fortier", "Director"],
+    [ "martin.chantal@codeboxx.biz", "345678", nil, nil, nil, DateTime.now, DateTime.now, 102, "Chantal", "Martin", "Assistant Director" ],
+    [ "mathieu.houde@codeboxx.biz", "456788", nil, nil, nil, DateTime.now, DateTime.now, 103, "Houde", "Mathieu", "Captain" ],
+    [ "patrick.thibault@codeboxx.biz", "564789", nil, nil, nil, DateTime.now, DateTime.now, 104, "Thibault", "Patrick", "Captain" ],
+    [ "david.boutin@codeboxx.biz", "664789", nil, nil, nil, DateTime.now, DateTime.now, 105, "Boutin", "David", "Engineer" ],
+    [ "mathieu.lortie@codeboxx.biz", "764789", nil, nil, nil, DateTime.now, DateTime.now, 106, "Lortie", "Mathieu", "Engineer" ],
+    [ "thomas.carrier@codeboxx.biz", "8564789", nil, nil, nil, DateTime.now, DateTime.now, 107, "Carrier", "Thomas", "Engineer" ],
+    [ "serge.savoie@codeboxx.biz", "964789", nil, nil, nil, DateTime.now, DateTime.now, 108, "Savoie", "Serge", "Engineer" ],
+    [ "francis.patry-jessop@codeboxx.biz", "574789", nil, nil, nil, DateTime.now, DateTime.now, 109, "Patry-Jessop", "Francis", "Engineer" ],
+    [ "mathieu.lefrancois@codeboxx.biz", "584789", nil, nil, nil, DateTime.now, DateTime.now, 110, "Lefrancois", "Mathieu", "Engineer" ],
+    [ "david.larochelle@codeboxx.biz", "594789", nil, nil, nil, DateTime.now, DateTime.now, 111, "Larochelle", "David", "Engineer" ],
+    [ "nicolas.pineault@codeboxx.biz", "565789", nil, nil, nil, DateTime.now, DateTime.now, 112, "Pineault", "Nicolas", "Engineer" ],
+    [ "david.amyot@codeboxx.biz", "564689", nil, nil, nil, DateTime.now, DateTime.now, 113, "Amyot", "David", "Engineer" ],
+    [ "remi.gagnon@codeboxx.biz", "564889", nil, nil, nil, DateTime.now, DateTime.now, 114, "Gagnon", "Remi", "Engineer" ],
+    [ "timothy.wever@codeboxx.biz", "569989", nil, nil, nil, DateTime.now, DateTime.now, 115, "Wever", "Timothy", "Developer" ],
+    [ "kiril.kleinerman@codeboxx.biz", "664789", nil, nil, nil, DateTime.now, DateTime.now, 116, "Kleinerman", "Kiril", "Developer" ],
+    [ "emmanuela.derilus@codeboxx.biz", "564799", nil, nil, nil, DateTime.now, DateTime.now, 117, "Derilus", "Emmanuela", "Developer" ],
+    [ "abdul.akeeb@codebozz.biz", "564289", nil, nil, nil, DateTime.now, DateTime.now, 118, "Akeeb", "Abdul", "Developer" ],
+    [ "krista.sheely@codeboxx.biz", "564989", nil, nil, nil, DateTime.now, DateTime.now, 119, "Sheely", "Krista", "Developer" ],
+    [ "jonathan.murray@codeboxx.biz", "564989", nil, nil, nil, DateTime.now, DateTime.now, 120, "Murray", "Jonathan", "Developer" ]
 ]
 
 
@@ -152,7 +153,7 @@ end
 (1..99).each do |battery|
     Battery.create!(
     #each customer is assigned an id from 23-123
-        building_id: building_id_array.delete(building_id_array.sample),
+        building_id: buildings_id_array.delete(buildings_id_array.sample),
         employee_id: rand(1..21),
         battery_type: random_type.sample,
         status: random_status.sample,

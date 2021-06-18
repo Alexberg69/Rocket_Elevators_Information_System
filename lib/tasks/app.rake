@@ -1,5 +1,5 @@
 require 'pg'
-con = PG::Connection.open(user: 'bromedy', dbname:'bromedy')
+# con = PG::Connection.open(user: 'bromedy', dbname:'bromedy')
 namespace :app do
   desc "Create the FactElevator Table"
   task factelevator: :environment do
@@ -7,7 +7,7 @@ namespace :app do
     con.exec('DROP TABLE IF EXISTS FactElevator')
     con.exec('CREATE TABLE FactElevator(
       serialNumber INT,
-      date_of_commissioning DATE,
+      date_of_commissioning INT,
       buildingID INT,
       customerID INT,
       building_city VARCHAR) ;')
@@ -42,6 +42,6 @@ namespace :app do
 end
 
 # FactElevator question command.. maybe
-#   con.exec("SELECT buildingid , customerid , COUNT(*) AS nbElevatorPerCust
+#   con.exec("SELECT building_city , customerid , COUNT(*) AS nbElevatorPerCust
 #   FROM factelevator
 #   GROUP BY 1,2 ;")

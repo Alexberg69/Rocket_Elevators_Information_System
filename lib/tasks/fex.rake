@@ -1,18 +1,15 @@
 require 'pg'
-
+# con = PG::Connection.open(user: 'bromedy', dbname:'bromedy')
 namespace :fex do
-  con = PG::Connection.open(host: '127.0.0.1', port: 5432, user: 'postgres', dbname: 'fexon', password: 'mynewpassword')
+  # con = PG::Connection.open(host: '127.0.0.1', port: 5432, user: 'postgres', dbname: 'fexon', password: 'mynewpassword')
 
-  desc "Create the QuoteTable"
+  desc "Create the FactQuote table"
 
   task quotetable: :environment do
-
-
-    con.exec('DROP DATABASE IF EXISTS QuoteTable')
-    # con.exec('DROP TABLE QuoteTable')
-    con.exec('CREATE TABLE QuoteTable(
+    con.exec('DROP TABLE IF EXISTS factquote')
+    con.exec('CREATE TABLE factquote(
     quote_id INT PRIMARY KEY, 
-    creation DATE,
+    creation VARCHAR,
     company_name TEXT,   
     email TEXT,
     nbelevator INT) ;')
@@ -20,10 +17,9 @@ namespace :fex do
  
     desc "data transfer"
   
-    task transfer_data_to_quote_table: :environment do
+    task quoteseed: :environment do
       Quote.all.each do |q|
-        puts("***************")
-        con.exec("INSERT INTO QuoteTable (quote_id, creation, compagny_name, email, nbelevator) VALUES (#{q.id}, #{q.created_at}, #{q.company_name}, #{q.email}, #{q.number_of_elevators})")
+        con.exec("INSERT INTO factquote (quote_id, creation, company_name, email, nbelevator) VALUES (#{q.id}, '#{q.created_at}', '#{q.company_name}', '#{q.email}', #{q.number_of_elevators})")
     end
   end
 end
