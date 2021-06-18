@@ -57,7 +57,7 @@ namespace :app do
     con.exec('DROP TABLE IF EXISTS factquote')
     con.exec('CREATE TABLE factquote(
     quote_id INT PRIMARY KEY, 
-    creation VARCHAR,
+    creation DATE,
     company_name TEXT,   
     email TEXT,
     nbelevator INT) ;')
@@ -76,7 +76,7 @@ namespace :app do
     con.exec('DROP TABLE IF EXISTS factcontact')
     con.exec("CREATE TABLE factcontact(
       contactId INT,
-      creationDate VARCHAR,
+      creationDate DATE,
       companyName TEXT, 
       email TEXT,
       projectName TEXT
