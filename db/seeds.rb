@@ -41,6 +41,10 @@ building_id_array = [*1..99]
 buildings_id_array = [*1..99]
 employee_id_array = [*1..22]
 model_type = ["Standard", "Premium", "Excelium"]
+random_type = ["residential", "commercial", "corporate", "hybrid"]
+info_key = ["Type, Construction Year, Last Renovation Year, Number of elevator in place"]
+random_values = [random_type.sample, Faker::Date.between(from: '2018-01-01', to: '2020-12-31'), Faker::Date.between(from: '2018-01-01', to: '2020-12-31'), Faker::Number.between(from: 1, to: 40)]
+random_status = ["Active", "Inactive"]
 
 data_hash['addresses'].each do |address|
      Address.create(type_of_address: address_type[rand(4)], status: address_status[rand(2)], entity: address_entity[rand(2)], number_and_street: address['address1'], suite_or_appartment: address['address2'], city: address['city'], postal_code: address['postalCode'], country: address['state'], notes: nil)
@@ -96,6 +100,24 @@ users_list.each do |email, password, reset_password_token, reset_password_sent_a
 
 end
 
+(1..20).each do |lead|
+    Lead.create!(
+    #each customer is assigned an id from 23-123
+        contact_name: Faker::Name.name.gsub(/\W/, ''),
+        company_name: Faker::Company.name.gsub(/\W/, ''),
+        email: Faker::Internet.email,
+        phone_number: Faker::PhoneNumber.phone_number,
+        project_name: Faker::Company.name.gsub(/\W/, ''),
+        project_description: Faker::Lorem.paragraph,
+        department_in_charge_of_the_elevators: random_type.sample,
+        message: Faker::Lorem.paragraph,
+        binary_file: Faker::File.extension,
+        created_at: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
+        updated_at: Faker::Date.between(from: '2018-01-01', to: '2020-12-31')
+
+    )
+end
+
 
 (1..99).each do |customer|
     Customer.create!(
@@ -131,11 +153,6 @@ end
 
     )
 end
-
-random_type = ["residential", "commercial", "corporate", "hybrid"]
-info_key = ["Type, Construction Year, Last Renovation Year, Number of elevator in place"]
-random_values = [random_type.sample, Faker::Date.between(from: '2018-01-01', to: '2020-12-31'), Faker::Date.between(from: '2018-01-01', to: '2020-12-31'), Faker::Number.between(from: 1, to: 40)]
-random_status = ["Active", "Inactive"]
 
 
 (1..99).each do |buildingdetail|

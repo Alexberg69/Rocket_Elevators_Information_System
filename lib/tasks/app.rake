@@ -1,5 +1,5 @@
 require 'pg'
-con = PG::Connection.open(host: '127.0.0.1', port: 5432, user: 'bromedy', dbname:'bromedy', password:'bromedy')
+con = PG::Connection.open(host: 'codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com', port: 3306, user: 'codeboxx', dbname:'AlexBergeronDWH', password:'codeboxx1!')
 namespace :app do
   desc "Create the FactElevator Table"
   task factelevator: :environment do
