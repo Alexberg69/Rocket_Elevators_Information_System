@@ -65,30 +65,30 @@
  
 #     desc "data transfer"
   
-#     task quoteseed: :environment do
-#       con.exec("TRUNCATE TABLE factquote RESTART IDENTITY;")
-#       Quote.all.each do |q|
-#         con.exec("INSERT INTO factquote (quote_id, creation, company_name, email, nbelevator) VALUES (#{q.id}, '#{q.created_at}', '#{q.company_name}', '#{q.email}', #{q.number_of_elevators})")
-#     end
-#   end
-#   task factcontact: :environment do
-#     # conn = PG::Connection.open(user: 'swtangel88', dbname: 'swtangel88')
-#     con.exec('DROP TABLE IF EXISTS factcontact')
-#     con.exec("CREATE TABLE factcontact(
-#       contactId INT,
-#       creationDate VARCHAR,
-#       companyName TEXT, 
-#       email TEXT,
-#       projectName TEXT
-#       );")
-#   end
+    task quoteseed: :environment do
+      con.exec("TRUNCATE TABLE factquote RESTART IDENTITY;")
+      Quote.all.each do |q|
+        con.exec("INSERT INTO factquote (quote_id, creation, company_name, email, nbelevator) VALUES (#{q.id}, '#{q.created_at}', '#{q.company_name}', '#{q.email}', #{q.number_of_elevators})")
+    end
+  end
+  task factcontact: :environment do
+    # conn = PG::Connection.open(user: 'swtangel88', dbname: 'swtangel88')
+    con.exec('DROP TABLE IF EXISTS factcontact')
+    con.exec("CREATE TABLE factcontact(
+      contactId INT,
+      creationDate VARCHAR,
+      companyName TEXT, 
+      email TEXT,
+      projectName TEXT
+      );")
+  end
 
-#   desc "Seed Factcontact Table"
-#   task factcontact1: :environment do
-#     con.exec("TRUNCATE TABLE factcontact RESTART IDENTITY;")
-#     Lead.all.each do |l|
-#     con.exec("INSERT INTO factcontact (contactId, creationDate, companyName, email, projectName) VALUES (#{l.id}, '#{l.created_at}', '#{l.company_name}', '#{l.email}', '#{l.project_name}');")
-#     end
-#   end
-# end
+  desc "Seed Factcontact Table"
+  task factcontact1: :environment do
+    con.exec("TRUNCATE TABLE factcontact RESTART IDENTITY;")
+    Lead.all.each do |l|
+    con.exec("INSERT INTO factcontact (contactId, creationDate, companyName, email, projectName) VALUES (#{l.id}, '#{l.created_at}', '#{l.company_name}', '#{l.email}', '#{l.project_name}');")
+    end
+  end
+end
 
