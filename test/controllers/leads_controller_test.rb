@@ -17,7 +17,7 @@ class LeadsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create lead" do
     assert_difference('Lead.count') do
-      post leads_url, params: { lead: { binary_file: @lead.binary_file, company_name: @lead.company_name, contact_name: @lead.contact_name, date_of_contact_request: @lead.date_of_contact_request, department_in_charge_of_the_elevators: @lead.department_in_charge_of_the_elevators, email: @lead.email, message: @lead.message, phone_number: @lead.phone_number, project_description: @lead.project_description, project_name: @lead.project_name } }
+      post leads_url, params: { lead: { company_name: @lead.company_name, departement: @lead.departement, email: @lead.email, full_name: @lead.full_name, message: @lead.message, phone_number: @lead.phone_number, project_description: @lead.project_description, project_name: @lead.project_name } }
     end
 
     assert_redirected_to lead_url(Lead.last)
@@ -34,7 +34,7 @@ class LeadsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update lead" do
-    patch lead_url(@lead), params: { lead: { binary_file: @lead.binary_file, company_name: @lead.company_name, contact_name: @lead.contact_name, date_of_contact_request: @lead.date_of_contact_request, department_in_charge_of_the_elevators: @lead.department_in_charge_of_the_elevators, email: @lead.email, message: @lead.message, phone_number: @lead.phone_number, project_description: @lead.project_description, project_name: @lead.project_name } }
+    patch lead_url(@lead), params: { lead: { company_name: @lead.company_name, departement: @lead.departement, email: @lead.email, full_name: @lead.full_name, message: @lead.message, phone_number: @lead.phone_number, project_description: @lead.project_description, project_name: @lead.project_name } }
     assert_redirected_to lead_url(@lead)
   end
 
