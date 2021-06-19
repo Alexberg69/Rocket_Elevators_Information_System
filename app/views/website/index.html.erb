@@ -1119,65 +1119,64 @@
 							</div><!-- /Alert Mandatory -->
 
 
-							<form method="post" action="/leads"> <!--action="php/contact.php" method="post" enctype="multipart/form-data" Took this out-->
+							<%= form_for Lead.new do |f| %>
 								<input type="hidden" name="action" value="contact_send"/>
 								
 								<fieldset>
 								
 									<div class="row">
 											<div class="col-md-4">
-												<label for="contact:[name]">Full Name *</label>
-												<input required type="text" value="" class="form-control" name="leads[contact_name]" id="name">
+												<%= f.label :full_name, "Full Name *" %>
+    											<%= f.text_field :full_name %>
 											</div>
 											<div class="col-md-4">
-												<label for="contact:[email]">E-mail Address *</label>
-												<input required type="email" value="" class="form-control" name="leads[email]" id="email">
+												<%= f.label :email, "E-mail Address *" %>
+    											<%= f.email_field :email %>
 											</div>
 											<div class="col-md-4">
-												<label for="contact:phone">Phone Number *</label>
-												<input required type="text" value="" class="form-control" name="leads[phone_number]" id="phone">
+												<%= f.label :phone_number, "Phone Number *" %>
+    											<%= f.phone_field :phone_number %>
 											</div>
 
 
 									</div>
 									<div class="row">
 											<div class="col-md-4">
-												<label for="contact:company_name">Company name</label>
-												<input type="text" value="" class="form-control" name="leads[company_name]" id="company_name">
+												<%= f.label :company_name, "Company name" %>
+    											<%= f.text_field :company_name %>
 											</div>
 									    	<div class="col-md-4">
-												<label for="contact:project_name">Project Name</label>
-												<input type="text" value="" class="form-control" name="leads[project_name]" id="project_name">
+												<%= f.label :project_name, "Project Name" %>
+    											<%= f.text_field :project_name %>
+
 											</div>
 											<div class="col-md-4">
-												<label for="contact:project_description">Project Description</label>
-												<input type="text" value="" class="form-control" name="leads[project_description]" id="project_description">
+												<%= f.label :project_description, "Project Description" %>
+    											<%= f.text_field :project_description %>
 											</div>
 									</div>
 									<div class="row">
 										<div class="col-md-4">
-											<label for="contact_department">Department</label>
-											<select class="form-control pointer" name="leads[department_in_charge_of_the_elevators]" id="department">
-												<option value="">--- Select ---</option>
-												<option value="Residential">Residential</option>
-												<option value="Commercial">Commercial</option>
-												<option value="Corporate">Corporate</option>
-												<option value="Hybrid">Hybrid</option>												
-											</select>
+
+											<%= f.label :departement, "Departement" %>
+										    <%= f.select :departement, [["--- Select ---", ""], "Residential", "Commercial", "Corporate", "Hybrid"] %>
+
 										</div>
 										<div class="col-md-8">
-												<label for="contact:message">Message *</label>
-												<textarea required maxlength="10000" rows="8" class="form-control" name="leads[message]" id="message"></textarea>
+											<div>
+												<%= f.label :message, "Message *" %>
+												<%= f.text_field :message %>
 											</div>
+										</div>
 									</div>
 									<div class="row">
 											<div class="col-md-12">
-												<label for="contact:attachment">File Attachment</label>
 
 												<!-- custom file upload -->
-												<input class="custom-file-upload" type="file" id="file" name="leads[binary_file]" id="attachment" data-btn-text="Select a File" />
+												<%= f.label :file %>
+												<%= f.file_field :file %>
 												<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
-
+												
 											</div>
 									</div>
 
@@ -1189,7 +1188,8 @@
 									
 									</div>
 								</div>
-							</form>
+							<% end %>
+							<%# </form> %>
 
 						</div>
 						<!-- /FORM -->

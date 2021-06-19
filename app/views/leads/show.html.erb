@@ -1,13 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Contact name:</strong>
-  <%= @lead.contact_name %>
-</p>
-
-<p>
-  <strong>Company name:</strong>
-  <%= @lead.company_name %>
+  <strong>Full name:</strong>
+  <%= @lead.full_name %>
 </p>
 
 <p>
@@ -21,6 +16,11 @@
 </p>
 
 <p>
+  <strong>Company name:</strong>
+  <%= @lead.company_name %>
+</p>
+
+<p>
   <strong>Project name:</strong>
   <%= @lead.project_name %>
 </p>
@@ -31,18 +31,13 @@
 </p>
 
 <p>
-  <strong>Department in charge of the elevators:</strong>
-  <%= @lead.department_in_charge_of_the_elevators %>
+  <strong>Departement:</strong>
+  <%= @lead.departement %>
 </p>
 
 <p>
   <strong>Message:</strong>
   <%= @lead.message %>
-</p>
-
-<p>
-  <strong>Binary file:</strong>
-  <%= @lead.binary_file %>
 </p>
 
 <%= link_to 'Edit', edit_lead_path(@lead) %> |

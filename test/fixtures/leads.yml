@@ -1,23 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  contact_name: MyString
-  company_name: MyString
+  full_name: MyString
   email: MyString
   phone_number: MyString
+  company_name: MyString
   project_name: MyString
   project_description: MyString
-  department_in_charge_of_the_elevators: MyString
+  departement: MyString
   message: MyString
-  binary_file:  
 
 two:
-  contact_name: MyString
-  company_name: MyString
+  full_name: MyString
   email: MyString
   phone_number: MyString
+  company_name: MyString
   project_name: MyString
   project_description: MyString
-  department_in_charge_of_the_elevators: MyString
+  departement: MyString
   message: MyString
-  binary_file: 

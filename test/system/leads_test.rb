@@ -14,11 +14,10 @@ class LeadsTest < ApplicationSystemTestCase
     visit leads_url
     click_on "New Lead"
 
-    fill_in "Binary file", with: @lead.binary_file
     fill_in "Company name", with: @lead.company_name
-    fill_in "Contact name", with: @lead.contact_name
-    fill_in "Department in charge of the elevators", with: @lead.department_in_charge_of_the_elevators
+    fill_in "Departement", with: @lead.departement
     fill_in "Email", with: @lead.email
+    fill_in "Full name", with: @lead.full_name
     fill_in "Message", with: @lead.message
     fill_in "Phone number", with: @lead.phone_number
     fill_in "Project description", with: @lead.project_description
@@ -33,11 +32,10 @@ class LeadsTest < ApplicationSystemTestCase
     visit leads_url
     click_on "Edit", match: :first
 
-    fill_in "Binary file", with: @lead.binary_file
     fill_in "Company name", with: @lead.company_name
-    fill_in "Contact name", with: @lead.contact_name
-    fill_in "Department in charge of the elevators", with: @lead.department_in_charge_of_the_elevators
+    fill_in "Departement", with: @lead.departement
     fill_in "Email", with: @lead.email
+    fill_in "Full name", with: @lead.full_name
     fill_in "Message", with: @lead.message
     fill_in "Phone number", with: @lead.phone_number
     fill_in "Project description", with: @lead.project_description

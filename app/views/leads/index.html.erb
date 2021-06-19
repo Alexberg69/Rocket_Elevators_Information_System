@@ -5,15 +5,14 @@
 <table>
   <thead>
     <tr>
-      <th>Contact name</th>
-      <th>Company name</th>
+      <th>Full name</th>
       <th>Email</th>
       <th>Phone number</th>
+      <th>Company name</th>
       <th>Project name</th>
       <th>Project description</th>
-      <th>Department in charge of the elevators</th>
+      <th>Departement</th>
       <th>Message</th>
-      <th>Binary file</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,15 +20,14 @@
   <tbody>
     <% @leads.each do |lead| %>
       <tr>
-        <td><%= lead.contact_name %></td>
-        <td><%= lead.company_name %></td>
+        <td><%= lead.full_name %></td>
         <td><%= lead.email %></td>
         <td><%= lead.phone_number %></td>
+        <td><%= lead.company_name %></td>
         <td><%= lead.project_name %></td>
         <td><%= lead.project_description %></td>
-        <td><%= lead.department_in_charge_of_the_elevators %></td>
+        <td><%= lead.departement %></td>
         <td><%= lead.message %></td>
-        <td><%= lead.binary_file %></td>
         <td><%= link_to 'Show', lead %></td>
         <td><%= link_to 'Edit', edit_lead_path(lead) %></td>
         <td><%= link_to 'Destroy', lead, method: :delete, data: { confirm: 'Are you sure?' } %></td>
