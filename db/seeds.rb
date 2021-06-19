@@ -103,15 +103,14 @@ end
 (1..20).each do |lead|
     Lead.create!(
     #each customer is assigned an id from 23-123
-        contact_name: Faker::Name.name.gsub(/\W/, ''),
+        full_name: Faker::Name.name.gsub(/\W/, ''),
         company_name: Faker::Company.name.gsub(/\W/, ''),
         email: Faker::Internet.email,
         phone_number: Faker::PhoneNumber.phone_number,
         project_name: Faker::Company.name.gsub(/\W/, ''),
         project_description: Faker::Lorem.paragraph,
-        department_in_charge_of_the_elevators: random_type.sample,
+        departement: random_type.sample,
         message: Faker::Lorem.paragraph,
-        binary_file: Faker::File.extension,
         created_at: Faker::Date.between(from: '2018-01-01', to: '2020-12-31'),
         updated_at: Faker::Date.between(from: '2018-01-01', to: '2020-12-31')
 
