@@ -1,5 +1,5 @@
 require 'pg'
-# con = PG::Connection.open(host: '127.0.0.1', port: 5432, user: 'bromedy', dbname:'bromedy', password:'bromedy')
+con = PG::Connection.open(host: 'codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com', port: 5432, user: 'codeboxx', dbname:'AlexBergeronDWH', password:'Codeboxx1!')
 namespace :app do
   desc "Create the FactElevator Table"
   task factelevator: :environment do
@@ -57,7 +57,7 @@ namespace :app do
     con.exec('DROP TABLE IF EXISTS factquote')
     con.exec('CREATE TABLE factquote(
     quote_id INT PRIMARY KEY, 
-    creation VARCHAR,
+    creation DATE,
     company_name TEXT,   
     email TEXT,
     nbelevator INT) ;')
@@ -76,7 +76,7 @@ namespace :app do
     con.exec('DROP TABLE IF EXISTS factcontact')
     con.exec("CREATE TABLE factcontact(
       contactId INT,
-      creationDate VARCHAR,
+      creationDate DATE,
       companyName TEXT, 
       email TEXT,
       projectName TEXT
